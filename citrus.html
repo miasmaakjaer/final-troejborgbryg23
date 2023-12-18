@@ -10,28 +10,33 @@
 </head>
 <body>
     <header>
-        <nav>    
-                <div class="menu-mobil">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fa-solid fa-bars"></i>
-                        <!-- <img class="burgerbar" src="img/burgerbar.webp" alt="Burgerbar"> -->
-                    </label>
-                </div>
-                            
-                    <ul class="menu-pc">
-                        <li><a href="produkter.html">PRODUKTER</a></li>
-                        <li><a href="error.html">EVENTS</a></li>
-                             <!-- logo -->
-                             <a href="index.html" id="navlogo">
-                                 <img src="img/logo.webp" alt="Logo"></a>
-                        <li><a href="om.html">OM OS</a></li>
-                        <li><a href="kontakt.html">KONTAKT</a></li>
-                    </ul>
+        <nav>
+            <div class="logo-container-mobil">
+              <a href="index.html"><img src="img/logo.webp" alt="" class="logo-mobil"></a>
+            </div>
+            
+            <div class="logo-container">
+                <a href="index.html"><img src="img/logo.webp" alt="" class="logo"></a>
+              </div>
 
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-
-    
+            <div class="shopping-container">
+              <i class="fa-solid fa-shopping-cart"></i>
+            </div>
+            
+            <!-- step 12 - adding input tag, label tag and i tag for fontawesome icon -->
+            <input type="checkbox" id="check" />
+            
+            <!-- step 13 - adding class attribute -->
+            <label for="check" class="checkbtn">
+              <i class="fa fa-bars"></i>
+            </label>
+           
+            <ul>
+                <li id="menu-produkter"><a href="produkter.html">PRODUKTER</a></li>
+                <li id="menu-events"><a href="error.html">EVENTS</a></li>
+                <li id="menu-om"><a href="om.html">OM OS</a></li>
+                <li id="menu-kontakt"><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
         </nav>
     </header>
 <main>

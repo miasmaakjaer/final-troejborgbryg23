@@ -628,15 +628,13 @@ footer li {
 
 /* computer */
 @media only screen and (min-width: 1024px) {
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: center;
+    nav ul {
+        display: flex;
+        justify-content: space-around;
     } 
-    
+
     nav ul li {
-        padding-top: 9.5%;
+        margin-top: -6.5%;
     }
 
     .logo-container {
@@ -653,7 +651,22 @@ nav ul {
         top: 50%;
         color: #b5a183;
     }
-   
+
+    .logo-container {
+        display: none;
+    }
+
+    .logo-container-mobil {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 0.5rem;
+    }
+
+    .logo-mobil {
+        height: 10rem;
+    }
+
 }
 
 /* tablet */
@@ -715,6 +728,10 @@ nav ul {
             width: 2rem;
         }
 
+        .logo-container-mobil {
+            display: none;
+        }
+
     }
 
 /* mobil */
@@ -771,6 +788,11 @@ nav ul {
     .logo {
         height: 8rem;
     }
+
+    .logo-container-mobil {
+        display: none;
+    }
+    
 }
  
 
