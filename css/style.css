@@ -1,0 +1,1012 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+body {
+    width: 100%;
+}
+
+nav {
+    background-color: #f3eee1;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+nav ul li {
+   margin: 0 2%;
+}
+
+nav ul li a {
+    display: inline-block; 
+    font-size: 1rem;
+    color: black;
+}
+
+#menu-produkter :hover {
+    opacity: 0.2;
+  }
+
+#menu-events :hover {
+    opacity: 0.2;
+}
+
+#menu-om :hover{
+    opacity: 0.2;
+  }
+
+#menu-kontakt :hover {
+    opacity: 0.2;
+}
+
+#check {
+    display: none;
+}
+
+.logo {
+    height: 12rem;
+}
+ 
+.shopping-container {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    color: #b5a183;
+}
+
+.shopping-container:hover {
+    opacity: 0.5;
+}
+
+.fa-bars {
+    position: absolute;
+    right: 4%;
+    top: 40%;
+    color: #b5a183;
+}
+
+.fa-bars:hover {
+    opacity: 0.5;
+}
+
+/*************************************************************************************************************************************/
+/********************************************************** FORSIDE ******************************************************************/
+/*************************************************************************************************************************************/
+
+/* section med big photo */
+
+.forside-storboks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3eee1;
+}
+
+.forside-storboks img {
+    width: 100%;
+    padding:9rem 10rem 4rem 10rem;
+}
+
+.forside-storboks .tekstbox {
+    background-color: #b5a183;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.forside-storboks .tekstbox a {
+    background-color: #b5a183;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.forside-storboks .tekstbox a :hover {
+    color: #f3eee1;
+}
+
+/* De seks bokse */
+
+.forside-bokse {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+  }
+  
+  .forside-bokse .forside-boks1 {
+    background-color: white;
+    width: 33.3%;
+    font-size: 1rem;
+    padding: 5rem 4rem;
+  }
+
+  .forside-bokse .forside-boks1 p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+  }
+
+  .forside-boks1-knap {
+    text-align: center;
+  }
+
+  .forside-boks1-link {
+    background-color: #b5a183;
+    color: black;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .forside-boks1-knap :hover {
+    color: #f3eee1;
+  }
+
+  .forside-bokse .forside-boks2 {
+    background-color: #f3eee1;
+    width: 33.3%;
+    font-size: 1rem;
+  }
+
+  .forside-bokse img {
+    width: 100%;
+    padding: 5rem;
+  }
+
+  .forside-bokse .forside-boks3 {
+    background-color: white;
+    width: 33.3%;
+    font-size: 1rem;
+    padding: 5rem 4rem;
+  }
+
+  .forside-bokse .forside-boks3 p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+  }
+
+  .forside-boks3-knap {
+    text-align: center;
+  }
+
+  .forside-boks3-link {
+    background-color: #b5a183;
+    color: black;
+    display: inline-block;
+    padding: 1.5rem;
+    margin-top: 5.7rem;
+  }
+
+  .forside-boks3-knap :hover {
+    color: #f3eee1;
+  }
+
+
+  .forside-bokse .forside-boks4 {
+    background-color: #f3eee1;
+    width: 33.3%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .forside-bokse .forside-boks4 img {
+    width: 100%;
+    padding: 5rem;
+  }
+
+  .forside-bokse .forside-boks5 {
+    background-color: white;
+    width: 33.3%;
+    text-align: left;
+    font-size: 1rem;
+    padding: 5rem 4rem;
+  }
+
+  .forside-bokse .forside-boks5 p {
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+  }
+
+  .forside-bokse .forside-boks6 {
+    background-color: #f3eee1;
+    width: 33.3%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .forside-bokse img {
+    width: 100%;
+    padding: 5rem;
+  }
+
+
+/*************************************************************************************************************************************/
+/********************************************************** PRODUKTER ****************************************************************/
+/*************************************************************************************************************************************/
+
+.produkter-overskrift {
+    background-color: #f3eee1;
+    padding: 12rem 0 2rem 0;
+    text-align: center;
+}
+
+.produkter-overskrift h1 {
+    font-size: 2rem;   
+    padding-bottom: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.produkter-overskrift p {
+    padding: 1rem 15%;
+}
+
+/* læs mere knap + læs mindre knapper */
+
+
+#laesmere {
+    display: none;
+}
+
+#laesmere:checked ~ .content {
+    display: block;
+}
+
+#laesmere:checked ~ .label-laes {
+    display: none;
+}
+
+.content {
+display: none;
+}
+
+/* Produkt varianter */
+
+.produkter-varianter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produkter-citrus {
+    background-color: white;
+    width: 24%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.5%;
+}
+
+.produkter-citrus img {
+    width: 100%;
+ }
+
+
+ .produkter-citrus-link {
+    color: black;
+ } 
+
+ .produkter-citrus-link :hover {
+    opacity: 0.5;
+ }
+
+.produkter-cherry {
+    background-color: white;
+    width: 24%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.5%;
+}
+
+.produkter-cherry img {
+    width: 100%;
+ }
+
+.produkter-kiwi {
+    background-color: white;
+    width: 24%;
+    text-align: center;
+    font-size: 1rem; 
+    margin: 0.5rem 0.5%;
+}
+
+.produkter-kiwi img {
+    width: 100%;
+ }
+
+.produkter-passion {
+    background-color: white;
+    width: 24%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0.5%;
+}
+
+.produkter-passion img {
+    width: 100%;
+ }
+
+ .produkter-varianter h3 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+.produkter-knap {
+    background-color: #b5a183;
+    padding: 0.5rem;
+} 
+
+.produkter-knap:hover {
+    background-color: #f3eee1;
+} 
+
+/*************************************************************************************************************************************/
+/********************************************* CITRUS - ALKOHOL FRI ØL MED CITRUS ****************************************************/
+/*************************************************************************************************************************************/
+
+.alkoholfri-citrus {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3.5rem;
+    width: 100%;
+}
+
+.alkoholfri-citrus-billede {
+    background-color: white;
+    width: 50%;
+}
+
+.alkoholfri-citrus-boks1 {
+    background-color: white;
+    width: 50%;
+    text-align: left;
+    margin: 9rem 0;
+    padding: 0 2rem;
+}
+
+.alkoholfri-citrus-boks1 h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.alkoholfri-citrus-knap {
+    background-color: #b5a183;
+    padding: 2rem 3rem;
+    margin: 2rem 60% 2rem 0;
+    text-align: center;
+}
+
+.alkoholfri-citrus-knap:hover {
+    background-color: #f3eee1;
+}
+
+.alkoholfri-citrus-boks1 h2 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.alkoholfri-citrus-boks1 p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.alkoholfri-citrus-indhold {
+    color: black;
+}
+
+.alkoholfri-citrus-indhold :hover {
+    opacity: 0.5;
+}
+/*************************************************************************************************************************************/
+/*********************************************************** OM OS *******************************************************************/
+/*************************************************************************************************************************************/
+
+.om-os-overskrift {
+    padding-top: 8.5rem;
+    background-color: #f3eee1;
+    text-align: center;
+}
+
+.om-os-overskrift h1 {
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.om-os-overskrift p {
+    font-size: 1rem;
+    padding: 1rem 10%;
+    line-height: 2rem;
+}
+
+.om-os-bokse {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.om-boks1 {
+    background-color: #f3eee1;
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem; 
+}
+
+.om-boks1 img {
+   width: 100%;
+   padding: 0 10%;
+}
+
+.om-boks2 {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 2%;
+}
+
+.om-boks2 p {
+    background-color: white;
+    text-align: left;
+    font-size: 1rem;
+    padding: 1.5rem 3rem;
+}
+
+.om-boks3 {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 2%; 
+}
+
+.om-boks3 p {
+    background-color: white;
+    text-align: left;
+    font-size: 1rem;
+    padding: 1.5rem 3rem;
+}
+
+.om-boks4 {
+    background-color: #f3eee1;
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem; 
+}
+
+.om-boks4 img {
+    width: 100%;
+    padding: 0 10%;
+ }
+
+/*************************************************************************************************************************************/
+/********************************************************** KONTAKT ******************************************************************/
+/*************************************************************************************************************************************/
+
+.kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 9rem;
+}
+
+.kontakt-boks1 {
+    background-color: white;
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem 0 17rem 1.5rem; 
+}
+
+.kontakt-boks1 h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.kontakt-boks2 {
+    background-color: #f3eee1;;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0 0 1.5rem;
+}
+
+.kontakt-boks2 p {
+    text-align: left;
+}
+
+.kontakt-boks3 {
+    background-color: #f3eee1;;
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    padding: 2rem 0 12rem 1.5rem; 
+}
+
+.kontakt-boks3 h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.kontakt-boks4 {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5rem 4rem;
+}
+
+.kontakt-boks4 iframe{
+    width: 100%;
+    height: 20rem;
+}
+
+/*************************************************************************************************************************************/
+/********************************************************** ERROR ******************************************************************/
+/*************************************************************************************************************************************/
+
+.error {
+    padding: 13rem 5rem 4rem 5rem;
+}
+
+.error-firkant {
+    background-color: #f3eee1;
+    padding: 10%;
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 3rem;
+} 
+
+.error-tekst {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.error a {
+    color: black;
+}
+
+/*************************************************************************************************************************************/
+/************************************************************* FOOTER ****************************************************************/
+/*************************************************************************************************************************************/
+
+footer {
+    background-color: #f3eee1;
+    display: flex;
+    width: 100%;
+    height: 8.5rem;
+}
+
+footer li {
+    padding: 0.5rem;
+} 
+
+.footer-kontakt {
+    flex-direction: column;
+    width: 28.5%;
+    text-align: left;
+    padding: 3rem 0 1rem 1rem;
+} 
+
+.social {
+    width: 43%;
+    text-align: center;
+    padding: 4rem;
+}
+
+.social a {
+    color: black;
+    padding: 1rem;
+    font-size: 2rem;
+}
+ 
+
+.footer-adresse {
+    flex-direction: column;
+    width: 28.5%;
+    text-align: right;
+    padding: 3rem 1rem 1rem 0;
+}
+
+
+/*************************************************************************************************************************************/
+/********************************************************* MEDIA QUERIES *************************************************************/
+/*************************************************************************************************************************************/
+
+
+/***************************************************** MEDIA TIL NAVBAR *************************************************************/
+
+/* computer */
+@media only screen and (min-width: 1024px) {
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+    } 
+    
+    nav ul li {
+        padding-top: 9.5%;
+    }
+
+    .logo-container {
+        float: inline-start;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .shopping-container {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        color: #b5a183;
+    }
+   
+}
+
+/* tablet */
+    @media only screen and (min-width: 768px) and (max-width:1023px) {
+        .checkbtn {
+            display: block;
+          }
+
+          ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #b5a183;
+            top: 80px;
+            left: 0;
+            text-align: center;
+      
+          }
+      
+        /* Step 18 */
+        /* Continuing styling break-point 858px max */
+      
+          nav ul li {
+            display: block;
+          }
+      
+            ul {
+            left: 100%;
+            transition: all 0.5s;
+            }
+      
+        /* Step 19 */
+        /* Continuing styling break-point 858px max */
+        /* adding new selector #check:checked~ */
+            
+          #check:checked ~ ul {
+            left: 0;
+      
+          }
+      
+        /* Step 20 */
+        /* Updating selector - nav ul li */
+        /* adding new properties - margin and line-height */
+      
+        nav ul li {
+          margin: 50px 0;
+          line-height: 30px;
+          }
+    
+        #check {
+            display: none;
+        }
+
+        .logo {
+            height: 10rem;   
+        }
+
+        .fa-bars {
+            width: 2rem;
+        }
+
+    }
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .checkbtn {
+        display: block;
+      }
+  
+      ul {
+        position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #b5a183;
+            top: 80px;
+            left: 0;
+            text-align: center;
+  
+      }
+  
+    /* Step 18 */
+    /* Continuing styling break-point 858px max */
+  
+      nav ul li {
+        display: block;
+      }
+  
+        ul {
+        left: 100%;
+        transition: all 0.5s;
+        }
+  
+    /* Step 19 */
+    /* Continuing styling break-point 858px max */
+    /* adding new selector #check:checked~ */
+        
+      #check:checked ~ ul {
+        left: 0;
+  
+      }
+  
+    /* Step 20 */
+    /* Updating selector - nav ul li */
+    /* adding new properties - margin and line-height */
+  
+    nav ul li {
+      margin: 50px 0;
+      line-height: 30px;
+      }
+
+    #check {
+        display: none;
+    }
+
+    .logo {
+        height: 8rem;
+    }
+}
+ 
+
+/**************************************************** MEDIA TIL FORSIDE *********************************************************/
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .forside-storboks img {
+        padding:10rem 4rem 3rem 4rem;
+    }
+
+    .forside-storboks .tekstbox  {
+        padding: 1rem 5rem;
+    }
+
+    .forside-bokse .forside-boks1 {
+        width: 50%;
+    }
+
+    .forside-bokse .forside-boks2 {
+        width: 50%;
+    }
+
+    .forside-bokse .forside-boks3 {
+        width: 50%;
+    }
+
+    .forside-bokse .forside-boks4 {
+        width: 50%;
+    }
+
+    .forside-bokse .forside-boks5 {
+        width: 50%;
+    }
+
+    .forside-bokse .forside-boks6 {
+        width: 50%;
+    }
+
+}
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .forside-storboks img {
+        padding:10rem 2rem 3rem 2rem;
+    }
+
+    .forside-storboks .tekstbox  {
+        padding: 1rem 3rem;
+    }
+
+    .forside-bokse .forside-boks1 {
+        width: 100%;
+    }
+
+    .forside-bokse .forside-boks2 {
+        width: 100%;
+    }
+
+    .forside-bokse .forside-boks3 {
+        width: 100%;
+    }
+
+    .forside-bokse .forside-boks4 {
+        width: 100%;
+    }
+
+    .forside-bokse .forside-boks5 {
+        width: 100%;
+    }
+
+    .forside-bokse .forside-boks6 {
+        width: 100%;
+    }
+}
+
+
+/**************************************************** MEDIA TIL PRODUKTER ********************************************************/
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .produkter-citrus {
+        width: 49%;
+    }
+
+    .produkter-cherry {
+        width: 49%; 
+    }
+    
+    .produkter-kiwi{
+        width: 49%; 
+    }
+
+    .produkter-passion{
+        width: 49%; 
+    }
+}
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .produkter-citrus {
+        width: 100%;
+    }
+
+    .produkter-cherry {
+        width: 100%; 
+    }
+    
+    .produkter-kiwi{
+        width: 100%; 
+    }
+
+    .produkter-passion{
+        width: 100%; 
+    }
+      
+}
+
+
+/***************************************************** MEDIA TIL CITRUS **********************************************************/
+
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .alkoholfri-citrus-billede {
+        width: 100%;
+    }
+    
+    .alkoholfri-citrus-boks1 {
+        width: 100%;
+    }
+}
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .alkoholfri-citrus-billede {
+        width: 100%;
+        padding-top: 3.5rem;
+    }
+    
+    .alkoholfri-citrus-boks1 {
+        width: 100%;   
+    }
+
+    .alkoholfri-citrus-knap {
+        padding: 1rem;
+        margin: 1rem 2rem 2rem 0;
+    }  
+}
+
+
+/***************************************************** MEDIA TIL OM OS **********************************************************/
+
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .om-boks1 {
+        width: 100%;
+    }
+     
+    .om-boks2 {
+        width: 100%;
+    }
+
+    .om-boks3 {
+        width: 100%;
+    }
+
+    .om-boks4 {
+        width: 100%;
+    }
+}
+
+/***************************************************** MEDIA TIL KONTAKT **********************************************************/
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    
+}
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .kontakt-boks1 {
+        width: 100%;
+        text-align: center;
+        background-color: #f3eee1;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .kontakt-boks2 {
+        width: 100%;
+        padding: 4rem;
+        background-color: #f3eee1;
+    }
+
+    .kontakt-boks2 {
+        width: 100%;
+        padding: 4rem;
+    }
+
+    .kontakt-boks3 {
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .kontakt-boks2 p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .kontakt-boks4 {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+/***************************************************** MEDIA TIL FOOTER **********************************************************/
+
+/* mobil */
+@media only screen and (min-width: 320px) and (max-width:767px) {
+   .footer-kontakt {
+    font-size: 0.7rem;
+   }
+
+   .social {
+    padding: 4rem 0;
+   }
+
+    .social a {
+    font-size: 1rem;
+   }
+
+   .footer-adresse {
+    font-size: 0.7rem;
+    padding: 3rem 0 2rem 0;
+   }
+}    
