@@ -367,7 +367,7 @@ display: none; /* gør at teksten er skjult, når man ikke aktivt har trykket p�
     flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
     padding-top: 3.5rem;
     width: 100%;
-    margin-top: 0%;
+    margin-top: 0;
     background-color: white;
 }
 
