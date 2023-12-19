@@ -8,7 +8,7 @@ Mia Smaakjær Lauridsen (eaa23msla@students.eaaa.dk)
 - Billeder fra Unsplash: to billeder på forsiden og frugterne på dåserne 
 - Font Awesome: sociale medie-ikoner i footeren, samt indkøbskurven og burgermenuen i navigationsbaren 
 - Google Maps: interaktiv kort på kontaktsiden 
-- 
+- Mockups-design.com: mockup til at deisgne dåserne
 
 /* Ressourcer */
 Billeder: pånær de få billeder der er fra Unsplash, er alle billeder taget af Mia Smaakjær Lauridsen
