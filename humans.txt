@@ -1,0 +1,15 @@
+Eksamensprojekt 1. semester, Efterår 2023 - Multimediedesigneruddannelsen, Erhvervsakademi Aarhus
+Trøjborg Bryg - alkoholfri øl
+
+/* Udvikler og designer */
+Mia Smaakjær Lauridsen (eaa23msla@students.eaaa.dk) 
+
+/* Bidrag */
+- Billeder fra Unsplash: to billeder på forsiden og frugterne på dåserne 
+- Font Awesome: sociale medie-ikoner i footeren, samt indkøbskurven og burgermenuen i navigationsbaren 
+- Google Maps: interaktiv kort på kontaktsiden 
+- 
+
+/* Ressourcer */
+Billeder: pånær de få billeder der er fra Unsplash, er alle billeder taget af Mia Smaakjær Lauridsen
+

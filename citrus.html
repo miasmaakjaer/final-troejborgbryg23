@@ -7,30 +7,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.webp"> 
+
+    <!-- meta for lokation -->
+    <meta name="geo.region" content="DK-82">
+    <meta name="geo.placename" content="Midtjylland">
+    <meta name="geo.position" content="56.1633;10.20361">
+    <meta name="ICBM" content="56.1633, 10.20361">
+    <!-- meta for forfatter -->
+    <meta name="author" content="Mia Smaakjær Lauridsen">
+    <!-- meta for beskrivelse af website -->
+    <meta name="description" content="Trøjborg Bryg producerer friske alkoholfri øl med en alkoholprocent på 0,0">
 </head>
+
 <body>
+
     <header>
         <nav>
+            <header>
+        <!-- her starter min navigationsbar -->
+        <nav>
+            <!-- logo computer -->
             <div class="logo-container-mobil">
-              <a href="index.html"><img src="img/logo.webp" alt="" class="logo-mobil"></a>
+              <a href="index.html"><img src="img/logo.webp" alt="Logo" class="logo-mobil"></a>
             </div>
-            
+            <!-- logo mobil -->
             <div class="logo-container">
-                <a href="index.html"><img src="img/logo.webp" alt="" class="logo"></a>
+                <a href="index.html"><img src="img/logo.webp" alt="Logo" class="logo"></a>
               </div>
-
+              <!-- indkøbskurv -->
             <div class="shopping-container">
               <i class="fa-solid fa-shopping-cart"></i>
             </div>
+            <!-- burgermenu -->
+            <input type="checkbox" id="check">
             
-            <!-- step 12 - adding input tag, label tag and i tag for fontawesome icon -->
-            <input type="checkbox" id="check" />
-            
-            <!-- step 13 - adding class attribute -->
             <label for="check" class="checkbtn">
               <i class="fa fa-bars"></i>
             </label>
-           
+           <!-- menupunkter -->
             <ul>
                 <li id="menu-produkter"><a href="produkter.html">PRODUKTER</a></li>
                 <li id="menu-events"><a href="error.html">EVENTS</a></li>
@@ -38,7 +52,10 @@
                 <li id="menu-kontakt"><a href="kontakt.html">KONTAKT</a></li>
             </ul>
         </nav>
+        <!-- her slutter min navigationsbar -->
+
     </header>
+
 <main>
     <section class="alkoholfri-citrus">
         <img class="alkoholfri-citrus-billede" src="img/citrus.webp" alt="Alkoholfri øl med citrus">
@@ -56,10 +73,12 @@
                 
                 <a class="alkoholfri-citrus-indhold" href="#"><p>Se nærringsindholdet her</p></a>
         </div>
-
     </section>
 </main>
+
+<!-- her starter min footer -->
 <footer>
+    <!-- kontaktoplysninger -->
     <div class="footer-kontakt">
         <ul>
             <li>+45 30 35 47 30</li>
@@ -67,12 +86,14 @@
         </ul>
     </div>
 
+    <!-- sociale medier -->
     <div class="social">
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a class="fb" href="#"><i class="fab fa-facebook"></i></a>
         <a href="mailto:mia.s.lauridsen@gmail.com"><i class="fa-regular fa-envelope"></i></a>
     </div>
 
+    <!-- adresse -->
     <div class="footer-adresse">
         <ul>
             <li>Tordenskjoldsgade 24A</li>
@@ -81,5 +102,7 @@
     </div>
 
 </footer>
+<!-- her slutter min footer -->
+
 </body>
 </html>

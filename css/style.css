@@ -10,9 +10,13 @@ body {
     width: 100%;
 }
 
+/*************************************************************************************************************************************/
+/******************************************************* NAVIGATIONSBAR **************************************************************/
+/*************************************************************************************************************************************/
+
 nav {
     background-color: #f3eee1;
-    position: fixed;
+    position: fixed; /* fixed gør at navigationsbaren sidder fast, når man scroller på siden */
     z-index: 5;
     width: 100%;
 }
@@ -27,6 +31,7 @@ nav ul li a {
     color: black;
 }
 
+/* ændrer farvens gennemsigtighed på menupunkterne, når man holder musen over */
 #menu-produkter :hover {
     opacity: 0.2;
   }
@@ -44,7 +49,7 @@ nav ul li a {
 }
 
 #check {
-    display: none;
+    display: none; 
 }
 
 .logo {
@@ -101,10 +106,8 @@ nav ul li a {
 }
 
 .forside-storboks .tekstbox a {
-    background-color: #b5a183;
     color: black;
     padding: 1rem 0;
-    text-align: center;
 }
 
 .forside-storboks .tekstbox a :hover {
@@ -115,14 +118,14 @@ nav ul li a {
 
 .forside-bokse {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
     background-color: white;
     width: 100%;
   }
   
   .forside-bokse .forside-boks1 {
     background-color: white;
-    width: 33.3%;
+    width: 33.3%; /* har sat bredden til 33%, så der ligger tre bokse ved siden af hinanden */
     font-size: 1rem;
     padding: 5rem 4rem;
   }
@@ -209,7 +212,7 @@ nav ul li a {
     width: 33.3%;
     text-align: left;
     font-size: 1rem;
-    padding: 5rem 4rem;
+    padding: 5rem;
   }
 
   .forside-bokse .forside-boks5 p {
@@ -252,35 +255,37 @@ nav ul li a {
     padding: 1rem 15%;
 }
 
-/* læs mere knap + læs mindre knapper */
-
-
+/* læs mere knap + vis mindre knap i overskriften */
 #laesmere {
-    display: none;
+    display: none; /* gør at det lille afkrydsningsikon forsvinder */
 }
 
 #laesmere:checked ~ .content {
-    display: block;
+    display: block; /* gør at teksten kommer frem, når man trykker læs mere*/
 }
 
 #laesmere:checked ~ .label-laes {
-    display: none;
+    display: none; /* gør at teksten forsvinder, når man trykker vis mindre*/
 }
 
 .content {
-display: none;
+display: none; /* gør at teksten er skjult, når man ikke aktivt har trykket på læs mere*/
+}
+
+.label-laes:hover {
+    opacity: 0.5;
 }
 
 /* Produkt varianter */
 
 .produkter-varianter {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
 }
 
 .produkter-citrus {
     background-color: white;
-    width: 24%;
+    width: 24%; /* har sat bredden til 24%, så der ligger fire bokse ved siden af hinanden, med lidt mellemrum mellem hver */
     text-align: center;
     font-size: 1rem;
     margin: 0.5rem 0.5%;
@@ -289,7 +294,6 @@ display: none;
 .produkter-citrus img {
     width: 100%;
  }
-
 
  .produkter-citrus-link {
     color: black;
@@ -335,6 +339,11 @@ display: none;
     width: 100%;
  }
 
+ .produkter-varianter h2 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
  .produkter-varianter h3 {
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
@@ -355,21 +364,21 @@ display: none;
 
 .alkoholfri-citrus {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
     padding-top: 3.5rem;
     width: 100%;
 }
 
 .alkoholfri-citrus-billede {
     background-color: white;
-    width: 50%;
+    width: 50%; /* har sat bredden til 50%, så der ligger to bokse ved siden af hinanden */
 }
 
 .alkoholfri-citrus-boks1 {
     background-color: white;
     width: 50%;
     text-align: left;
-    margin: 9rem 0;
+    margin: 7rem 0;
     padding: 0 2rem;
 }
 
@@ -431,12 +440,12 @@ display: none;
 
 .om-os-bokse {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
 }
 
 .om-boks1 {
     background-color: #f3eee1;
-    width: 50%;
+    width: 50%; /* har sat bredden til 50%, så der ligger to bokse ved siden af hinanden */
     text-align: left;
     font-size: 1rem;
     padding: 2rem; 
@@ -495,14 +504,14 @@ display: none;
 /*************************************************************************************************************************************/
 
 .kontakt {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
     padding-top: 9rem;
 }
 
 .kontakt-boks1 {
     background-color: white;
-    width: 50%;
+    width: 50%; /* har sat bredden til 50%, så der ligger to bokse ved siden af hinanden */
     text-align: left;
     font-size: 1rem;
     padding: 2rem 0 17rem 1.5rem; 
@@ -514,7 +523,7 @@ display: none;
 
 .kontakt-boks2 {
     background-color: #f3eee1;;
-    width: 50%;
+    width: 50%; 
     text-align: center;
     font-size: 1.5rem;
     padding: 2rem 0 0 1.5rem;
@@ -631,10 +640,11 @@ footer li {
     nav ul {
         display: flex;
         justify-content: space-around;
+        margin-top: -7%;
     } 
 
     nav ul li {
-        margin-top: -6.5%;
+        padding-bottom: 5rem;
     }
 
     .logo-container {
@@ -677,43 +687,22 @@ footer li {
 
           ul {
             position: fixed;
-            width: 100%;
+            width: 100%; 
             height: 100vh;
             background: #b5a183;
-            top: 80px;
-            left: 0;
             text-align: center;
-      
+            left: 100%;
+            transition: all 0.5s;
           }
-      
-        /* Step 18 */
-        /* Continuing styling break-point 858px max */
       
           nav ul li {
             display: block;
+            margin: 50px 0;
+            line-height: 30px;
           }
-      
-            ul {
-            left: 100%;
-            transition: all 0.5s;
-            }
-      
-        /* Step 19 */
-        /* Continuing styling break-point 858px max */
-        /* adding new selector #check:checked~ */
             
           #check:checked ~ ul {
-            left: 0;
-      
-          }
-      
-        /* Step 20 */
-        /* Updating selector - nav ul li */
-        /* adding new properties - margin and line-height */
-      
-        nav ul li {
-          margin: 50px 0;
-          line-height: 30px;
+            left: 0; /* gør at burgermenuen folder helt ud på siden*/
           }
     
         #check {
@@ -731,7 +720,6 @@ footer li {
         .logo-container-mobil {
             display: none;
         }
-
     }
 
 /* mobil */
@@ -745,39 +733,22 @@ footer li {
             width: 100%;
             height: 100vh;
             background: #b5a183;
-            top: 80px;
-            left: 0;
             text-align: center;
-  
+            left: 100%;
+            transition: all 0.5s;
       }
-  
-    /* Step 18 */
-    /* Continuing styling break-point 858px max */
   
       nav ul li {
         display: block;
       }
-  
-        ul {
-        left: 100%;
-        transition: all 0.5s;
-        }
-  
-    /* Step 19 */
-    /* Continuing styling break-point 858px max */
-    /* adding new selector #check:checked~ */
+
         
       #check:checked ~ ul {
-        left: 0;
-  
+        left: 0; /* gør at burgermenuen folder helt ud på siden*/
       }
   
-    /* Step 20 */
-    /* Updating selector - nav ul li */
-    /* adding new properties - margin and line-height */
-  
     nav ul li {
-      margin: 50px 0;
+      margin: 50px 0; 
       line-height: 30px;
       }
 
@@ -792,7 +763,6 @@ footer li {
     .logo-container-mobil {
         display: none;
     }
-    
 }
  
 
@@ -808,6 +778,7 @@ footer li {
         padding: 1rem 5rem;
     }
 
+    /* her ændres alle de små bokse, så de kommer til at fylde 50% i bredden, så der er to boks ved siden af hinanden*/
     .forside-bokse .forside-boks1 {
         width: 50%;
     }
@@ -844,6 +815,7 @@ footer li {
         padding: 1rem 3rem;
     }
 
+/* her ændres alle de små bokse til at fylde 100% i bredden, så alle bokse kommer til at ligge under hinanden*/
     .forside-bokse .forside-boks1 {
         width: 100%;
     }
@@ -874,6 +846,8 @@ footer li {
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width:1023px) {
+    
+    /* her ændres hvert produkt til at fylde 49% i bredden, så der er to produkter ved siden af hinanden med lidt luft mellem dem */
     .produkter-citrus {
         width: 49%;
     }
@@ -893,6 +867,8 @@ footer li {
 
 /* mobil */
 @media only screen and (min-width: 320px) and (max-width:767px) {
+    
+    /* her ændres hvert produkt til at fylde 100% i bredden, så alle produkter ligger under hinanden */
     .produkter-citrus {
         width: 100%;
     }
@@ -917,6 +893,7 @@ footer li {
 
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width:1023px) {
+    /* her sættes bredden af hhv. billede og tekst til 100%, så de kommer under hinanden */
     .alkoholfri-citrus-billede {
         width: 100%;
     }
@@ -928,6 +905,7 @@ footer li {
 
 /* mobil */
 @media only screen and (min-width: 320px) and (max-width:767px) {
+    /* her sættes bredden af hhv. billede og tekst til 100%, så de kommer under hinanden */
     .alkoholfri-citrus-billede {
         width: 100%;
         padding-top: 3.5rem;
@@ -949,6 +927,7 @@ footer li {
 
 /* mobil */
 @media only screen and (min-width: 320px) and (max-width:767px) {
+    /* alle bokse bliver sat til 100%, så de kommer under hinanden */
     .om-boks1 {
         width: 100%;
     }
@@ -968,13 +947,9 @@ footer li {
 
 /***************************************************** MEDIA TIL KONTAKT **********************************************************/
 
-/* tablet */
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-    
-}
-
 /* mobil */
 @media only screen and (min-width: 320px) and (max-width:767px) {
+    /* alle bokse bliver sat til 100%, så de kommer under hinanden */
     .kontakt-boks1 {
         width: 100%;
         text-align: center;
@@ -1012,6 +987,8 @@ footer li {
 }
 
 /***************************************************** MEDIA TIL FOOTER **********************************************************/
+
+
 
 /* mobil */
 @media only screen and (min-width: 320px) and (max-width:767px) {
