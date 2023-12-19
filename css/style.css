@@ -367,11 +367,14 @@ display: none; /* gør at teksten er skjult, når man ikke aktivt har trykket p�
     flex-wrap: wrap; /* har brugt flex-wrap: wrap, så mine bokse automatisk flyttes ned på næste linje, når bredden er 100% */
     padding-top: 3.5rem;
     width: 100%;
+    margin-top: 0%;
+    background-color: white;
 }
 
 .alkoholfri-citrus-billede {
     background-color: white;
     width: 50%; /* har sat bredden til 50%, så der ligger to bokse ved siden af hinanden */
+    
 }
 
 .alkoholfri-citrus-boks1 {
@@ -641,11 +644,8 @@ footer li {
         display: flex;
         justify-content: space-around;
         margin-top: -7%;
+        margin-bottom: 6%;
     } 
-
-    nav ul li {
-        padding-bottom: 5rem;
-    }
 
     .logo-container {
         float: inline-start;
@@ -891,6 +891,7 @@ footer li {
 /***************************************************** MEDIA TIL CITRUS **********************************************************/
 
 
+
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width:1023px) {
     /* her sættes bredden af hhv. billede og tekst til 100%, så de kommer under hinanden */
@@ -955,6 +956,7 @@ footer li {
         text-align: center;
         background-color: #f3eee1;
         padding: 2rem 2rem 0 2rem;
+        margin-top: -2%;
     }
 
     .kontakt-boks2 {
